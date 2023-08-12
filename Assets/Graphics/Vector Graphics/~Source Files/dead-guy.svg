@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733335"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="person.svg"
+   inkscape:export-filename="C:\Users\iownb\Documents\unity\Small Game\Assets\Graphics\Vector Graphics\person.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="1.4645623"
+     inkscape:cx="144.41175"
+     inkscape:cy="84.666934"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5144">
+      <stop
+         style="stop-color:#fad4ad;stop-opacity:1"
+         offset="0"
+         id="stop11397" />
+      <stop
+         style="stop-color:#f3cea8;stop-opacity:1"
+         offset="1"
+         id="stop11399" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5144-4">
+      <stop
+         style="stop-color:#3f230b;stop-opacity:1"
+         offset="0"
+         id="stop5140" />
+      <stop
+         style="stop-color:#2e1805;stop-opacity:1"
+         offset="1"
+         id="stop5142" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5144"
+       id="radialGradient8463"
+       cx="32.93829"
+       cy="-50.856445"
+       fx="32.93829"
+       fy="-50.856445"
+       r="33.421532"
+       gradientTransform="matrix(-0.97297297,0,0,-1.0324325,66.095389,-20.084438)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5144-4"
+       id="radialGradient11394"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,0,1.1687813e-4)"
+       cx="33.866665"
+       cy="33.866634"
+       fx="33.866665"
+       fy="33.866634"
+       r="33.421532" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:url(#radialGradient8463);fill-opacity:1;stroke:none;stroke-width:0.257837"
+       id="path846"
+       cx="33.866665"
+       cy="33.866634"
+       rx="32.518246"
+       ry="32.518219"
+       inkscape:label="Skin" />
+    <path
+       id="ellipse9077"
+       style="display:none;fill:url(#radialGradient11394);fill-opacity:1;stroke:none;stroke-width:1.00157"
+       inkscape:label="Hair"
+       d="M 127.88672,44.382812 A 108.36134,19.739512 0 0 0 19.650391,63.423828 154.31232,66.572793 0 0 1 19.525391,63.376953 126.3176,126.31748 0 0 0 1.6816406,128 126.3176,126.31748 0 0 0 128,254.31641 126.3176,126.31748 0 0 0 254.31836,128 126.3176,126.31748 0 0 0 236.51953,63.359375 154.31232,66.572793 0 0 1 236.18555,63.486328 108.36134,19.739512 0 0 0 127.88672,44.382812 Z"
+       transform="scale(0.26458333)" />
+    <ellipse
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.336138"
+       id="path13958"
+       cx="22.587484"
+       cy="11.018538"
+       rx="4.087359"
+       ry="1.0277853"
+       transform="matrix(0.98751845,-0.15750337,0.09888019,0.99509935,0,0)" />
+    <ellipse
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.336138"
+       id="ellipse14122"
+       cx="-44.584675"
+       cy="0.38659343"
+       rx="4.087359"
+       ry="1.0277853"
+       transform="matrix(-0.98751845,-0.15750337,-0.09888019,0.99509935,0,0)" />
+  </g>
+</svg>
