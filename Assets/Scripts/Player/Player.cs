@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     public Color rechargeColor;
 
     public static Controls c;
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     const float movementCoefficient = 30;
 
     const float dashCoefficient = 20;
@@ -68,9 +68,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
         if (c.Player.Interact.triggered && !frozen && interactables.Count > 0)
         {
             interactables[0].Interact(this);
@@ -83,18 +80,12 @@ public class Player : MonoBehaviour
             dashTime.Set(dashTimeDuration);
             colorer.Flash(dashColor, 4);
         }
-
-        if (c.Player.Movement.ReadValue<Vector2>() == Vector2.zero) {
-            twist.target = 0;
-        }
     }
 
     private void FixedUpdate()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(c.Player.MousePos.ReadValue<Vector2>());
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, Vector2.SignedAngle(Vector2.up, mousePos - (Vector2)transform.position) + (twist * 15)));
-
-        rb.AddForce(c.Player.Movement.ReadValue<Vector2>() * movementCoefficient);
     }
 
     //private void OnCollisionEnter2D(Collision2D collision)
@@ -111,8 +102,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        IInteractable i = collision.GetComponent<IInteractable>();
-        if (i != null) interactables.Add(i);
+        if (collision.TryGetComponent<IInteractable>(out var i)) interactables.Add(i);
     }
 
     //void TakeHit(Damager d, Vector2 hitPos)

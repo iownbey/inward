@@ -2237,6 +2237,7 @@ GameObject:
   - component: {fileID: 446233465}
   - component: {fileID: 446233464}
   - component: {fileID: 446233463}
+  - component: {fileID: 446233471}
   - component: {fileID: 446233469}
   - component: {fileID: 446233470}
   - component: {fileID: 446233467}
@@ -2263,6 +2264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashColor: {r: 1, g: 1, b: 1, a: 1}
   rechargeColor: {r: 1, g: 1, b: 1, a: 1}
+  rb: {fileID: 0}
   canDash: 0
   sword: {fileID: 1463827108}
   shield: {fileID: 1816101447}
@@ -2535,6 +2537,38 @@ MonoBehaviour:
   attemptIndicator: {fileID: 1464508199}
   dialogueBox: {fileID: 1133067796}
   dialogueCanvas: {fileID: 743919852}
+--- !u!114 &446233471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446233462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b04ef9f7376fe4e9618969969680ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 446233463}
+  sounds:
+    ts:
+    - {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
+    - {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
+    - {fileID: 8300000, guid: 0909de896e9029541b92ae05fe15e4b6, type: 3}
+    - {fileID: 8300000, guid: 6ad0cf00f050bee41a2dee098475dc78, type: 3}
+    - {fileID: 8300000, guid: 7ca5a9710db4327439c9f8cb8204615e, type: 3}
+    - {fileID: 8300000, guid: 14ae706fef2303e4cb71112dbd5d250b, type: 3}
+    - {fileID: 8300000, guid: b995bc1775ea83b4b8f861763e9a1424, type: 3}
+    - {fileID: 8300000, guid: d15f7338d693f0343843a6b9096d27f6, type: 3}
+  source: {fileID: 1013170695}
+  walkingProfile:
+    force: 20
+    minStrideCoefficient: 0.5
+    stepInterval: 0.2
+  runningProfile:
+    force: 40
+    minStrideCoefficient: 0.2
+    stepInterval: 0.4
 --- !u!4 &447572292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2690652004611642425, guid: 7616bd82ee7d77c488309d04292d3679, type: 3}
@@ -4404,7 +4438,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013170693}
-  - component: {fileID: 1013170694}
   - component: {fileID: 1013170695}
   m_Layer: 0
   m_Name: Footsteps
@@ -4428,31 +4461,6 @@ Transform:
   m_Father: {fileID: 446233465}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1013170694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013170692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecc950f03e795f4b8f01c0bafe53136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 446233463}
-  stride: 1.5
-  sounds:
-    ts:
-    - {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
-    - {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
-    - {fileID: 8300000, guid: 0909de896e9029541b92ae05fe15e4b6, type: 3}
-    - {fileID: 8300000, guid: 6ad0cf00f050bee41a2dee098475dc78, type: 3}
-    - {fileID: 8300000, guid: 7ca5a9710db4327439c9f8cb8204615e, type: 3}
-    - {fileID: 8300000, guid: 14ae706fef2303e4cb71112dbd5d250b, type: 3}
-    - {fileID: 8300000, guid: b995bc1775ea83b4b8f861763e9a1424, type: 3}
-    - {fileID: 8300000, guid: d15f7338d693f0343843a6b9096d27f6, type: 3}
-  source: {fileID: 1013170695}
 --- !u!82 &1013170695
 AudioSource:
   m_ObjectHideFlags: 0
